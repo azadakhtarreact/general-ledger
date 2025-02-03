@@ -194,7 +194,7 @@ const form = () => {
                                                 placeholder='Category'
                                                 onChange={handleSelect}
                                             />
-                                            {showError ? <p className="text-red-600">{errors.description.message}</p> : ''}
+                                            {showError ? <p className="text-xs text-red-600">Please select category</p> : ''}
 
                                             {/* {errors.selectedCategory && <p className="text-red-600">{errors.description.message}</p>} */}
                                         </div>
