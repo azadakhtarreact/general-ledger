@@ -8,8 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-BUILD_PATH='./build'
-# dist
+#BUILD_PATH='./build'
+dist
 dist-ssr
 *.local
 

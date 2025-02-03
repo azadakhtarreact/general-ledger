@@ -140,7 +140,7 @@ const form = () => {
                                                 name='name'
                                                 defaultValue=''
                                                 control={control}
-                                                render={({ field }) => <input autoComplete='off' className="w-full p-2 input input-bordered" {...field} placeholder='Name' invalid={errors.name && true} />}
+                                                render={({ field }) => <input autoComplete='off' className="w-full input input-bordered" {...field} placeholder='Name' invalid={errors.name && true} />}
                                             />
                                             {errors.name && <p className="text-xs text-red-600">{errors.name.message}</p>}
                                         </div>
@@ -157,7 +157,7 @@ const form = () => {
                                                 name='description'
                                                 defaultValue=''
                                                 control={control}
-                                                render={({ field }) => <input type='textarea' autoComplete='off' className="w-full p-2 rounded textarea textarea-bordered" {...field} placeholder='Description' invalid={errors.description && true} />}
+                                                render={({ field }) => <input type='textarea' autoComplete='off' className="w-full rounded textarea textarea-bordered" {...field} placeholder='Description' invalid={errors.description && true} />}
                                             />
                                             {errors.description && <p className="text-xs text-red-600">{errors.description.message}</p>}
                                         </div>
@@ -175,7 +175,7 @@ const form = () => {
                                                 name='price'
                                                 defaultValue=''
                                                 control={control}
-                                                render={({ field }) => <input type='number' min='1' autoComplete='off' className="w-full p-2 input input-bordered" {...field} placeholder='Price' invalid={errors.price && true} />}
+                                                render={({ field }) => <input type='number' min='1' autoComplete='off' className="w-full input input-bordered" {...field} placeholder='Price' invalid={errors.price && true} />}
                                             />
                                             {errors.price && <p className="text-xs text-red-600">{errors.price.message}</p>}
                                         </div>

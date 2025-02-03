@@ -218,11 +218,10 @@ const TablePage = () => {
     <div>
       <div className="container py-4 mx-auto ">
 
-        <div className="mb-5 title">
-          <div className="grid grid-cols-2">
-            <div><h4 className='col-span-4 mb-0 text-2xl font-extrabold'>General Ledger</h4></div>
-            <div className='flex flex-row col-end-5 justify-content-end align-items-center'>
-
+        <div className="mb-5 lg:px-0 sm:px-5 title">
+          <div className="grid lg:grid-cols-1 sm:grid-cols-2">
+            <div><h4 className='mb-0 font-extrabold lg:text-2xl sm:text-sm'>General Ledger</h4></div>
+            <div className='flex flex-row lg:col-end-5 sm-cols-1 justify-content-end align-items-center'>
               <CreateProduct />
               <button className="mx-2 btn-md btn">Show Chart</button>
               {/* <div className="m-lg-2">
@@ -232,14 +231,13 @@ const TablePage = () => {
                 <button className="btn btn-outline">Show Chart</button>
               </div> */}
             </div>
-
           </div>
         </div>
         <div className="shadow-xl card bg-base-100 table-inputs">
-          <div className="grid grid-cols-3 gap-3 p-5 text-center">
+          <div className="grid gap-3 p-5 text-center lg:grid-cols-3 sm:grid-cols-1">
             <div className="text-center">
-              <div className="div">
-                <label className="flex items-center gap-2 input input-bordered search">
+              <div className="">
+                <label className="flex items-center w-full gap-2 input input-bordered search">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16"
@@ -274,7 +272,7 @@ const TablePage = () => {
                 <input
                   type="text"
                   placeholder="Type here"
-                  className="w-full max-w-xs input input-bordered" />
+                  className="w-full input input-bordered" />
               </div>
             </div>
 
@@ -282,8 +280,8 @@ const TablePage = () => {
 
           {/* start table here */}
 
-          <div className='grid grid-cols-12 py-5 mb-2'>
-            <div className="w-full col-span-12">
+          <div className='grid grid-cols-1 py-5 mb-2'>
+            <div className="w-full react-dataTable react-dataTable-selectable-rows">
               <DataTable
                 //noHeader
                 columns={columns}
