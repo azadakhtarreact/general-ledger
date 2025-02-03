@@ -33,9 +33,9 @@ const form = () => {
 
     // ** Hooks
     const formValidation = yup.object().shape({
-        name: yup.string().required('Please enter your name'),
-        description: yup.string().required('Please enter your description'),
-        price: yup.string().required('Please enter your price'),
+        name: yup.string().required('Please enter product name'),
+        description: yup.string().required('Please enter  description'),
+        price: yup.string().required('Please enter  price'),
     })
 
     const {
